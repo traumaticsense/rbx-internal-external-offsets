@@ -4,35 +4,35 @@
 
 // Dumped by: decamp dumper
 // Website: https://decamp.dev/offsets
-// Roblox version: version-d584fb6c717a43d9
+// Roblox version: version-ddf602d9cfe44005
 namespace Offsets
 {
 	namespace Build
 	{
-		inline constexpr std::uintptr_t ImageSize = 0x8F66000;
+		inline constexpr std::uintptr_t ImageSize = 0x9082000;
 	}
 
 	namespace Pointers
 	{
 		namespace DataModel
 		{
-			inline constexpr std::uintptr_t Pointer = 0x8A5D748;
-			inline constexpr std::uintptr_t RealDataModel = 0x1D0;
+			inline constexpr std::uintptr_t Pointer = 0x8B79B58;
+			inline constexpr std::uintptr_t RealDataModel = 0x1D8;
 		}
 		namespace PlayerConfigurer
 		{
-			inline constexpr std::uintptr_t Pointer = 0x868C4A8;
+			inline constexpr std::uintptr_t Pointer = 0x86A8278;
 		}
 		namespace TaskScheduler
 		{
-			inline constexpr std::uintptr_t Pointer = 0x879A6E8;
+			inline constexpr std::uintptr_t Pointer = 0x88B64C8;
 		}
 		namespace VisualEngine
 		{
-			inline constexpr std::uintptr_t Pointer = 0x811D0A0;
+			inline constexpr std::uintptr_t Pointer = 0x8136228;
 			inline constexpr std::uintptr_t Dimensions = 0xAE0;
 			inline constexpr std::uintptr_t FakeDataModel = 0xAC0;
-			inline constexpr std::uintptr_t RenderView = 0xBF0;
+			inline constexpr std::uintptr_t RenderView = 0xC00;
 			inline constexpr std::uintptr_t ViewMatrix = 0x180;
 		}
 	}
@@ -52,7 +52,19 @@ namespace Offsets
 		inline constexpr std::uintptr_t PrimitiveIndexArrayPtr = 0x80;
 		inline constexpr std::uintptr_t RenderQueueId = 0x10;
 		inline constexpr std::uintptr_t TechniqueArrayPtr = 0x70;
-		inline constexpr std::uintptr_t VTableRva = 0x68CDA58;
+		inline constexpr std::uintptr_t VTableRva = 0x68CB818;
+	}
+
+	namespace AirController
+	{
+		inline constexpr std::uintptr_t BalanceMaxTorque = 0xEC;
+		inline constexpr std::uintptr_t BalanceSpeed = 0xF0;
+		inline constexpr std::uintptr_t LinearImpulse = 0xE0;
+		inline constexpr std::uintptr_t MaintainAngularMomentum = 0x100;
+		inline constexpr std::uintptr_t MaintainLinearMomentum = 0x101;
+		inline constexpr std::uintptr_t MoveMaxForce = 0xF4;
+		inline constexpr std::uintptr_t TurnMaxTorque = 0xF8;
+		inline constexpr std::uintptr_t TurnSpeedFactor = 0xFC;
 	}
 
 	namespace AirProperties
@@ -158,11 +170,8 @@ namespace Offsets
 		inline constexpr std::uintptr_t AnimationId7 = 0x358;
 		inline constexpr std::uintptr_t AnimationId8 = 0x360;
 		inline constexpr std::uintptr_t AnimationId9 = 0x368;
-		inline constexpr std::uintptr_t EvaluationThrottled = 0x428;
 		inline constexpr std::uintptr_t FacsReplicationData = 0xB8;
 		inline constexpr std::uintptr_t PreferLodEnabled = 0x3E4;
-		inline constexpr std::uintptr_t RootMotion = 0x370;
-		inline constexpr std::uintptr_t RootMotionWeight = 0x3A0;
 	}
 
 	namespace Atmosphere
@@ -189,17 +198,13 @@ namespace Offsets
 		inline constexpr std::uintptr_t WorldSecondaryAxis = 0xD0;
 	}
 
-	namespace AuroraScript
-	{
-		inline constexpr std::uintptr_t Source = 0x130;
-	}
-
 	namespace AvatarAccessoryRules
 	{
 		inline constexpr std::uintptr_t AccessoryMode = 0xFC;
 		inline constexpr std::uintptr_t CustomAccessoryMode = 0x100;
 		inline constexpr std::uintptr_t CustomBackAccessoryEnabled = 0x108;
 		inline constexpr std::uintptr_t CustomBackAccessoryId = 0xB0;
+		inline constexpr std::uintptr_t CustomFaceAccessoryEnabled = 0x109;
 		inline constexpr std::uintptr_t CustomFaceAccessoryId = 0xB8;
 		inline constexpr std::uintptr_t CustomFrontAccessoryEnabled = 0x10A;
 		inline constexpr std::uintptr_t CustomFrontAccessoryId = 0xC0;
@@ -214,6 +219,7 @@ namespace Offsets
 		inline constexpr std::uintptr_t CustomWaistAccessoryEnabled = 0x10F;
 		inline constexpr std::uintptr_t CustomWaistAccessoryId = 0xE8;
 		inline constexpr std::uintptr_t EnableEmissives = 0x110;
+		inline constexpr std::uintptr_t EnableSound = 0x111;
 		inline constexpr std::uintptr_t EnableVFX = 0x112;
 		inline constexpr std::uintptr_t LimitBounds = 0xF0;
 		inline constexpr std::uintptr_t LimitMethod = 0x104;
@@ -239,12 +245,12 @@ namespace Offsets
 		inline constexpr std::uintptr_t CustomPantsAccessoryId = 0xE0;
 		inline constexpr std::uintptr_t CustomRightShoesAccessoryEnabled = 0x12B;
 		inline constexpr std::uintptr_t CustomRightShoesAccessoryId = 0xE8;
-		inline constexpr std::uintptr_t CustomShirtAccessoryEnabled = 0x12C;
 		inline constexpr std::uintptr_t CustomShirtAccessoryId = 0xF0;
 		inline constexpr std::uintptr_t CustomShortsAccessoryId = 0xF8;
 		inline constexpr std::uintptr_t CustomSweaterAccessoryEnabled = 0x12E;
 		inline constexpr std::uintptr_t CustomSweaterAccessoryId = 0x100;
 		inline constexpr std::uintptr_t CustomTShirtAccessoryEnabled = 0x12F;
+		inline constexpr std::uintptr_t CustomTShirtAccessoryId = 0x108;
 		inline constexpr std::uintptr_t LimitBounds = 0x110;
 	}
 
@@ -255,72 +261,77 @@ namespace Offsets
 
 	namespace BasePart
 	{
-		inline constexpr std::uintptr_t Anchored = 0x128;
-		inline constexpr std::uintptr_t AssemblyAngularVelocity = 0x128;
-		inline constexpr std::uintptr_t AssemblyCenterOfMass = 0xCC;
-		inline constexpr std::uintptr_t AssemblyMass = 0x128;
-		inline constexpr std::uintptr_t AssemblyRootPart = 0x128;
-		inline constexpr std::uintptr_t AudioCanCollide = 0xD4;
-		inline constexpr std::uintptr_t BackParamA = 0x128;
-		inline constexpr std::uintptr_t BackParamB = 0x128;
-		inline constexpr std::uintptr_t BackSurface = 0x128;
-		inline constexpr std::uintptr_t BackSurfaceInput = 0x128;
-		inline constexpr std::uintptr_t BottomParamA = 0x128;
-		inline constexpr std::uintptr_t BottomParamB = 0x128;
-		inline constexpr std::uintptr_t BottomSurface = 0x128;
-		inline constexpr std::uintptr_t BottomSurfaceInput = 0x128;
-		inline constexpr std::uintptr_t BrickColor = 0x148;
-		inline constexpr std::uintptr_t CFrame = 0x128;
-		inline constexpr std::uintptr_t CanCollide = 0x128;
-		inline constexpr std::uintptr_t CanQuery = 0x128;
-		inline constexpr std::uintptr_t CanTouch = 0x128;
-		inline constexpr std::uintptr_t CastShadow = 0xD5;
+		inline constexpr std::uintptr_t Anchored = 0x188;
+		inline constexpr std::uintptr_t AssemblyAngularVelocity = 0x188;
+		inline constexpr std::uintptr_t AssemblyCenterOfMass = 0x188;
+		inline constexpr std::uintptr_t AssemblyMass = 0x188;
+		inline constexpr std::uintptr_t AssemblyRootPart = 0x188;
+		inline constexpr std::uintptr_t AudioCanCollide = 0x134;
+		inline constexpr std::uintptr_t BackParamA = 0xC8;
+		inline constexpr std::uintptr_t BackParamB = 0xCC;
+		inline constexpr std::uintptr_t BackSurface = 0xD0;
+		inline constexpr std::uintptr_t BackSurfaceInput = 0xD4;
+		inline constexpr std::uintptr_t BottomParamA = 0xD8;
+		inline constexpr std::uintptr_t BottomParamB = 0xDC;
+		inline constexpr std::uintptr_t BottomSurface = 0xE0;
+		inline constexpr std::uintptr_t BottomSurfaceInput = 0xE4;
+		inline constexpr std::uintptr_t BrickColor = 0x1A8;
+		inline constexpr std::uintptr_t CFrame = 0x188;
+		inline constexpr std::uintptr_t CanCollide = 0x188;
+		inline constexpr std::uintptr_t CanQuery = 0x188;
+		inline constexpr std::uintptr_t CanTouch = 0x188;
+		inline constexpr std::uintptr_t CastShadow = 0x135;
 		inline constexpr std::uintptr_t CenterOfMass = 0xCC;
-		inline constexpr std::uintptr_t CollisionGroup = 0x128;
-		inline constexpr std::uintptr_t CollisionGroupId = 0x128;
-		inline constexpr std::uintptr_t CollisionGroupReplicate = 0x128;
-		inline constexpr std::uintptr_t Color = 0x148;
-		inline constexpr std::uintptr_t Color3uint8 = 0x148;
-		inline constexpr std::uintptr_t CurrentPhysicalProperties = 0x128;
-		inline constexpr std::uintptr_t CustomPhysicalProperties = 0x128;
-		inline constexpr std::uintptr_t DraggingV1 = 0x128;
-		inline constexpr std::uintptr_t Elasticity = 0x128;
-		inline constexpr std::uintptr_t EnableFluidForces = 0x128;
-		inline constexpr std::uintptr_t ExtentsCFrame = 0x128;
-		inline constexpr std::uintptr_t ExtentsSize = 0x128;
-		inline constexpr std::uintptr_t Friction = 0x128;
-		inline constexpr std::uintptr_t FrontParamA = 0x128;
-		inline constexpr std::uintptr_t FrontParamB = 0x128;
-		inline constexpr std::uintptr_t FrontSurface = 0x128;
-		inline constexpr std::uintptr_t FrontSurfaceInput = 0x128;
-		inline constexpr std::uintptr_t LeftParamA = 0x128;
-		inline constexpr std::uintptr_t LeftParamB = 0x128;
-		inline constexpr std::uintptr_t LeftSurface = 0x128;
-		inline constexpr std::uintptr_t LeftSurfaceInput = 0x128;
-		inline constexpr std::uintptr_t LocalTransparencyModifier = 0xC8;
-		inline constexpr std::uintptr_t Locked = 0xD6;
-		inline constexpr std::uintptr_t Mass = 0x128;
-		inline constexpr std::uintptr_t Massless = 0xD7;
-		inline constexpr std::uintptr_t Material = 0x128;
-		inline constexpr std::uintptr_t NetworkIsSleeping = 0x128;
-		inline constexpr std::uintptr_t NetworkOwnerV3 = 0x128;
-		inline constexpr std::uintptr_t NetworkOwnershipRule = 0x128;
-		inline constexpr std::uintptr_t ReceiveAge = 0x128;
-		inline constexpr std::uintptr_t Reflectance = 0xCC;
-		inline constexpr std::uintptr_t RightParamA = 0x128;
-		inline constexpr std::uintptr_t RightParamB = 0x128;
-		inline constexpr std::uintptr_t RightSurface = 0x128;
-		inline constexpr std::uintptr_t RightSurfaceInput = 0x128;
-		inline constexpr std::uintptr_t RootPriority = 0x128;
-		inline constexpr std::uintptr_t RotVelocity = 0x128;
-		inline constexpr std::uintptr_t Size = 0x128;
-		inline constexpr std::uintptr_t SpecificGravity = 0x128;
-		inline constexpr std::uintptr_t TopParamA = 0x128;
-		inline constexpr std::uintptr_t TopParamB = 0x128;
+		inline constexpr std::uintptr_t CollisionGroup = 0x188;
+		inline constexpr std::uintptr_t CollisionGroupId = 0x188;
+		inline constexpr std::uintptr_t CollisionGroupReplicate = 0x188;
+		inline constexpr std::uintptr_t Color = 0x1A8;
+		inline constexpr std::uintptr_t Color3uint8 = 0x1A8;
+		inline constexpr std::uintptr_t CurrentPhysicalProperties = 0x188;
+		inline constexpr std::uintptr_t CustomPhysicalProperties = 0x188;
+		inline constexpr std::uintptr_t DraggingV1 = 0x188;
+		inline constexpr std::uintptr_t Elasticity = 0x188;
+		inline constexpr std::uintptr_t EnableFluidForces = 0x188;
+		inline constexpr std::uintptr_t ExtentsCFrame = 0x188;
+		inline constexpr std::uintptr_t ExtentsSize = 0x188;
+		inline constexpr std::uintptr_t Friction = 0x188;
+		inline constexpr std::uintptr_t FrontParamA = 0xE8;
+		inline constexpr std::uintptr_t FrontParamB = 0xEC;
+		inline constexpr std::uintptr_t FrontSurface = 0xF0;
+		inline constexpr std::uintptr_t FrontSurfaceInput = 0xF4;
+		inline constexpr std::uintptr_t LeftParamA = 0xF8;
+		inline constexpr std::uintptr_t LeftParamB = 0xFC;
+		inline constexpr std::uintptr_t LeftSurface = 0x100;
+		inline constexpr std::uintptr_t LeftSurfaceInput = 0x104;
+		inline constexpr std::uintptr_t LocalTransparencyModifier = 0x108;
+		inline constexpr std::uintptr_t Locked = 0x136;
+		inline constexpr std::uintptr_t Mass = 0x188;
+		inline constexpr std::uintptr_t Massless = 0x137;
+		inline constexpr std::uintptr_t Material = 0x188;
+		inline constexpr std::uintptr_t NetworkIsSleeping = 0x188;
+		inline constexpr std::uintptr_t NetworkOwnerV3 = 0x188;
+		inline constexpr std::uintptr_t NetworkOwnershipRule = 0x188;
+		inline constexpr std::uintptr_t ReceiveAge = 0x188;
+		inline constexpr std::uintptr_t Reflectance = 0x10C;
+		inline constexpr std::uintptr_t RightParamA = 0x110;
+		inline constexpr std::uintptr_t RightParamB = 0x114;
+		inline constexpr std::uintptr_t RightSurface = 0x118;
+		inline constexpr std::uintptr_t RightSurfaceInput = 0x11C;
+		inline constexpr std::uintptr_t RootPriority = 0x188;
+		inline constexpr std::uintptr_t RotVelocity = 0x188;
+		inline constexpr std::uintptr_t Size = 0x188;
+		inline constexpr std::uintptr_t SpecificGravity = 0x188;
+		inline constexpr std::uintptr_t TopParamA = 0x120;
+		inline constexpr std::uintptr_t TopParamB = 0x124;
 		inline constexpr std::uintptr_t TopSurface = 0x128;
-		inline constexpr std::uintptr_t TopSurfaceInput = 0x128;
-		inline constexpr std::uintptr_t Transparency = 0xD0;
-		inline constexpr std::uintptr_t Velocity = 0x128;
+		inline constexpr std::uintptr_t TopSurfaceInput = 0x12C;
+		inline constexpr std::uintptr_t Transparency = 0x130;
+		inline constexpr std::uintptr_t Velocity = 0x188;
+	}
+
+	namespace BaseScript
+	{
+		inline constexpr std::uintptr_t LinkedSource = 0xF8;
 	}
 
 	namespace Beam
@@ -337,6 +348,8 @@ namespace Offsets
 		inline constexpr std::uintptr_t LightInfluence = 0x190;
 		inline constexpr std::uintptr_t LocalTransparencyModifier = 0x194;
 		inline constexpr std::uintptr_t Segments = 0x198;
+		inline constexpr std::uintptr_t Texture = 0x130;
+		inline constexpr std::uintptr_t TextureContent = 0x130;
 		inline constexpr std::uintptr_t TextureLength = 0x19C;
 		inline constexpr std::uintptr_t TextureMode = 0x1A0;
 		inline constexpr std::uintptr_t TextureSpeed = 0x1A4;
@@ -344,12 +357,6 @@ namespace Offsets
 		inline constexpr std::uintptr_t Width0 = 0x1A8;
 		inline constexpr std::uintptr_t Width1 = 0x1AC;
 		inline constexpr std::uintptr_t ZOffset = 0x1B0;
-	}
-
-	namespace BevelMesh
-	{
-		inline constexpr std::uintptr_t Bevel = 0xE0;
-		inline constexpr std::uintptr_t Bulge = 0xE8;
 	}
 
 	namespace BinaryStringValue
@@ -380,6 +387,7 @@ namespace Offsets
 		inline constexpr std::uintptr_t RightArmColor = 0xF0;
 		inline constexpr std::uintptr_t RightArmColor3 = 0xF4;
 		inline constexpr std::uintptr_t RightLegColor = 0x100;
+		inline constexpr std::uintptr_t RightLegColor3 = 0x104;
 		inline constexpr std::uintptr_t TorsoColor = 0x110;
 		inline constexpr std::uintptr_t TorsoColor3 = 0x114;
 	}
@@ -395,7 +403,13 @@ namespace Offsets
 
 	namespace Bone
 	{
-		inline constexpr std::uintptr_t Transform = 0x180;
+		inline constexpr std::uintptr_t Transform = 0x188;
+		inline constexpr std::uintptr_t TransformedCFrame = 0xB0;
+	}
+
+	namespace BrickColorValue
+	{
+		inline constexpr std::uintptr_t Value = 0xB8;
 	}
 
 	namespace CFrameValue
@@ -430,6 +444,14 @@ namespace Offsets
 		inline constexpr std::uintptr_t MeshId = 0xF8;
 		inline constexpr std::uintptr_t OverlayTextureContent = 0x118;
 		inline constexpr std::uintptr_t OverlayTextureId = 0x128;
+	}
+
+	namespace ClimbController
+	{
+		inline constexpr std::uintptr_t AccelerationTime = 0xE0;
+		inline constexpr std::uintptr_t BalanceMaxTorque = 0xE4;
+		inline constexpr std::uintptr_t BalanceSpeed = 0xE8;
+		inline constexpr std::uintptr_t MoveMaxForce = 0xEC;
 	}
 
 	namespace Clothing
@@ -468,16 +490,16 @@ namespace Offsets
 
 	namespace DataModel
 	{
-		inline constexpr std::uintptr_t CreatorId = 0x180;
-		inline constexpr std::uintptr_t CreatorType = 0x1A0;
-		inline constexpr std::uintptr_t ForceR15 = 0x1B0;
-		inline constexpr std::uintptr_t GameId = 0x188;
-		inline constexpr std::uintptr_t GearGenreSetting = 0x70C;
-		inline constexpr std::uintptr_t Genre = 0x1A4;
-		inline constexpr std::uintptr_t MatchmakingType = 0x1A8;
-		inline constexpr std::uintptr_t PlaceId = 0x190;
-		inline constexpr std::uintptr_t PlaceVersion = 0x1AC;
-		inline constexpr std::uintptr_t Workspace = 0x160;
+		inline constexpr std::uintptr_t CreatorId = 0x178;
+		inline constexpr std::uintptr_t CreatorType = 0x198;
+		inline constexpr std::uintptr_t ForceR15 = 0x1A8;
+		inline constexpr std::uintptr_t GameId = 0x180;
+		inline constexpr std::uintptr_t GearGenreSetting = 0x704;
+		inline constexpr std::uintptr_t Genre = 0x19C;
+		inline constexpr std::uintptr_t MatchmakingType = 0x1A0;
+		inline constexpr std::uintptr_t PlaceId = 0x188;
+		inline constexpr std::uintptr_t PlaceVersion = 0x1A4;
+		inline constexpr std::uintptr_t Workspace = 0x158;
 	}
 
 	namespace DataModelMesh
@@ -485,6 +507,27 @@ namespace Offsets
 		inline constexpr std::uintptr_t Offset = 0xB8;
 		inline constexpr std::uintptr_t Scale = 0xC4;
 		inline constexpr std::uintptr_t VertexColor = 0xD0;
+	}
+
+	namespace Decal
+	{
+		inline constexpr std::uintptr_t AutoLocalize = 0x224;
+		inline constexpr std::uintptr_t Color3 = 0x1F0;
+		inline constexpr std::uintptr_t LocalTransparencyModifier = 0x20C;
+		inline constexpr std::uintptr_t Rotation = 0x210;
+		inline constexpr std::uintptr_t TexturePackContent = 0x1A0;
+		inline constexpr std::uintptr_t TexturePackMetadata = 0x1D0;
+		inline constexpr std::uintptr_t Transparency = 0x21C;
+		inline constexpr std::uintptr_t UVOffset = 0x1FC;
+		inline constexpr std::uintptr_t UVScale = 0x204;
+		inline constexpr std::uintptr_t ZIndex = 0x220;
+	}
+
+	namespace DeferredAssetManagerService
+	{
+		inline constexpr std::uintptr_t JoiningPlaceId = 0xC8;
+		inline constexpr std::uintptr_t JoiningUniverseId = 0xD0;
+		inline constexpr std::uintptr_t PregameLoadingScreenOnly = 0xD8;
 	}
 
 	namespace EditableMesh
@@ -513,20 +556,41 @@ namespace Offsets
 
 	namespace ExperienceStateCaptureService
 	{
-		inline constexpr std::uintptr_t HiddenSelectionEnabled = 0xC4;
 		inline constexpr std::uintptr_t IsInCaptureMode = 0xC6;
 		inline constexpr std::uintptr_t SelectionMode = 0xC0;
 	}
 
+	namespace Glue
+	{
+		inline constexpr std::uintptr_t F0 = 0x190;
+		inline constexpr std::uintptr_t F2 = 0x1A0;
+		inline constexpr std::uintptr_t F3 = 0x1AC;
+	}
+
+	namespace GroundController
+	{
+		inline constexpr std::uintptr_t AccelerationLean = 0xE0;
+		inline constexpr std::uintptr_t AccelerationTime = 0xE4;
+		inline constexpr std::uintptr_t BalanceMaxTorque = 0xE8;
+		inline constexpr std::uintptr_t BalanceSpeed = 0xEC;
+		inline constexpr std::uintptr_t DecelerationTime = 0xF0;
+		inline constexpr std::uintptr_t Friction = 0xF4;
+		inline constexpr std::uintptr_t FrictionWeight = 0xF8;
+		inline constexpr std::uintptr_t GroundOffset = 0xFC;
+		inline constexpr std::uintptr_t StandForce = 0x100;
+		inline constexpr std::uintptr_t StandSpeed = 0x104;
+		inline constexpr std::uintptr_t TurnSpeedFactor = 0x108;
+	}
+
 	namespace GuiBase2d
 	{
+		inline constexpr std::uintptr_t AbsolutePosition = 0x10C;
 		inline constexpr std::uintptr_t AbsoluteRotation = 0xE8;
 		inline constexpr std::uintptr_t AbsoluteSize = 0x114;
 		inline constexpr std::uintptr_t ActiveQueryNames = 0x4B0;
 		inline constexpr std::uintptr_t AutoLocalize = 0x134;
 		inline constexpr std::uintptr_t IsNotOccluded = 0x135;
 		inline constexpr std::uintptr_t Localize = 0x134;
-		inline constexpr std::uintptr_t RawRect2D = 0x10C;
 		inline constexpr std::uintptr_t ReplicatedInsertionOrder = 0x11C;
 		inline constexpr std::uintptr_t RootLocalizationTable = 0xE0;
 		inline constexpr std::uintptr_t SelectionBehaviorDown = 0x120;
@@ -669,19 +733,33 @@ namespace Offsets
 		inline constexpr std::uintptr_t Face = 0xE0;
 		inline constexpr std::uintptr_t FallAnimation = 0xE8;
 		inline constexpr std::uintptr_t GraphicTShirt = 0xF0;
+		inline constexpr std::uintptr_t Head = 0xE0;
+		inline constexpr std::uintptr_t HeadColor = 0xE8;
 		inline constexpr std::uintptr_t HeadScale = 0x140;
 		inline constexpr std::uintptr_t HeightScale = 0x144;
 		inline constexpr std::uintptr_t IdleAnimation = 0xF8;
 		inline constexpr std::uintptr_t JumpAnimation = 0x100;
+		inline constexpr std::uintptr_t LeftArm = 0xE0;
+		inline constexpr std::uintptr_t LeftArmColor = 0xE8;
+		inline constexpr std::uintptr_t LeftLeg = 0xE0;
+		inline constexpr std::uintptr_t LeftLegColor = 0xE8;
+		inline constexpr std::uintptr_t MoodAnimation = 0x108;
 		inline constexpr std::uintptr_t NumberEmotesLoaded = 0x148;
 		inline constexpr std::uintptr_t Pants = 0x110;
 		inline constexpr std::uintptr_t ProportionScale = 0x14C;
 		inline constexpr std::uintptr_t ResetIncludesBodyParts = 0x154;
+		inline constexpr std::uintptr_t RightArm = 0xE0;
+		inline constexpr std::uintptr_t RightArmColor = 0xE8;
+		inline constexpr std::uintptr_t RightLeg = 0xE0;
+		inline constexpr std::uintptr_t RightLegColor = 0xE8;
 		inline constexpr std::uintptr_t RunAnimation = 0x118;
 		inline constexpr std::uintptr_t Shirt = 0x120;
 		inline constexpr std::uintptr_t StaticFacialAnimation = 0x155;
 		inline constexpr std::uintptr_t SwimAnimation = 0x128;
+		inline constexpr std::uintptr_t Torso = 0xE0;
+		inline constexpr std::uintptr_t TorsoColor = 0xE8;
 		inline constexpr std::uintptr_t UseAvatarSettings = 0x156;
+		inline constexpr std::uintptr_t WalkAnimation = 0x130;
 		inline constexpr std::uintptr_t WidthScale = 0x150;
 	}
 
@@ -695,12 +773,15 @@ namespace Offsets
 		inline constexpr std::uintptr_t LeftHip = 0x120;
 		inline constexpr std::uintptr_t LeftKnee = 0x130;
 		inline constexpr std::uintptr_t LeftShoulder = 0x140;
+		inline constexpr std::uintptr_t LeftToeBase = 0x150;
 		inline constexpr std::uintptr_t LeftWrist = 0x160;
 		inline constexpr std::uintptr_t Neck = 0x170;
 		inline constexpr std::uintptr_t RightAnkle = 0x180;
 		inline constexpr std::uintptr_t RightClavicle = 0x190;
 		inline constexpr std::uintptr_t RightElbow = 0x1A0;
 		inline constexpr std::uintptr_t RightHip = 0x1B0;
+		inline constexpr std::uintptr_t RightToeBaseSize = 0x8D4;
+		inline constexpr std::uintptr_t RightToeBaseTposeAdjustment = 0x590;
 		inline constexpr std::uintptr_t RightWrist = 0x1F0;
 	}
 
@@ -760,11 +841,20 @@ namespace Offsets
 		inline constexpr std::uintptr_t ShadowSoftness = 0x13C;
 	}
 
+	namespace Logger
+	{
+		inline constexpr std::uintptr_t Name = 0x80;
+	}
+
 	namespace LuaSourceContainer
 	{
+		inline constexpr std::uintptr_t CachedRemoteSource = 0xB8;
 		inline constexpr std::uintptr_t CachedRemoteSourceLoadState = 0xF0;
 		inline constexpr std::uintptr_t HasAssociatedDrafts = 0xF4;
+		inline constexpr std::uintptr_t IsDifferentFromFileSystem = 0xF5;
+		inline constexpr std::uintptr_t SandboxedSource = 0x120;
 		inline constexpr std::uintptr_t ScriptGuid = 0xD0;
+		inline constexpr std::uintptr_t isPlayerScript = 0xF6;
 	}
 
 	namespace MaterialColors
@@ -814,28 +904,34 @@ namespace Offsets
 		inline constexpr std::uintptr_t AvgMetalness = 0x204;
 		inline constexpr std::uintptr_t AvgRoughness = 0x208;
 		inline constexpr std::uintptr_t BaseMaterial = 0x20C;
+		inline constexpr std::uintptr_t ColorMap = 0xB8;
 		inline constexpr std::uintptr_t EmissiveStrength = 0x210;
 		inline constexpr std::uintptr_t EmissiveTint = 0x1F4;
 		inline constexpr std::uintptr_t MaterialPattern = 0x214;
+		inline constexpr std::uintptr_t MetalnessMap = 0x118;
+		inline constexpr std::uintptr_t NormalMap = 0x148;
+		inline constexpr std::uintptr_t RoughnessMap = 0x178;
 		inline constexpr std::uintptr_t StudsPerTile = 0x218;
+		inline constexpr std::uintptr_t TexturePack = 0x1A8;
 		inline constexpr std::uintptr_t TexturePackContent = 0x1A8;
 	}
 
 	namespace MeshPart
 	{
-		inline constexpr std::uintptr_t AlternateMeshHash = 0x340;
-		inline constexpr std::uintptr_t DoubleSided = 0x315;
-		inline constexpr std::uintptr_t HasJointOffset = 0x314;
-		inline constexpr std::uintptr_t HasSkinnedMesh = 0x316;
-		inline constexpr std::uintptr_t InitialSize = 0x1C8;
-		inline constexpr std::uintptr_t JointOffset = 0x300;
-		inline constexpr std::uintptr_t MeshContent = 0x298;
-		inline constexpr std::uintptr_t MeshID = 0x2A8;
-		inline constexpr std::uintptr_t RenderFidelity = 0x30C;
-		inline constexpr std::uintptr_t RenderFidelityReplicate = 0x30C;
-		inline constexpr std::uintptr_t TextureContent = 0x2C8;
-		inline constexpr std::uintptr_t TextureID = 0x2D8;
-		inline constexpr std::uintptr_t VertexCount = 0x310;
+		inline constexpr std::uintptr_t AlternateMeshHash = 0x3A0;
+		inline constexpr std::uintptr_t DoubleSided = 0x375;
+		inline constexpr std::uintptr_t HasJointOffset = 0x374;
+		inline constexpr std::uintptr_t HasSkinnedMesh = 0x376;
+		inline constexpr std::uintptr_t InitialSize = 0x228;
+		inline constexpr std::uintptr_t JointOffset = 0x360;
+		inline constexpr std::uintptr_t MeshContent = 0x2F8;
+		inline constexpr std::uintptr_t MeshID = 0x308;
+		inline constexpr std::uintptr_t RenderFidelity = 0x36C;
+		inline constexpr std::uintptr_t RenderFidelityReplicate = 0x36C;
+		inline constexpr std::uintptr_t SolidMeshHolder = 0x2B8;
+		inline constexpr std::uintptr_t TextureContent = 0x328;
+		inline constexpr std::uintptr_t TextureID = 0x338;
+		inline constexpr std::uintptr_t VertexCount = 0x370;
 	}
 
 	namespace Model
@@ -843,6 +939,7 @@ namespace Offsets
 		inline constexpr std::uintptr_t LevelOfDetail = 0x13C;
 		inline constexpr std::uintptr_t LodEntity = 0xD0;
 		inline constexpr std::uintptr_t ModelMeshCFrame = 0x100;
+		inline constexpr std::uintptr_t ModelMeshData = 0xE8;
 		inline constexpr std::uintptr_t ModelMeshSize = 0x130;
 		inline constexpr std::uintptr_t ModelStreamingMode = 0x140;
 		inline constexpr std::uintptr_t PrimaryPart = 0x258;
@@ -856,11 +953,9 @@ namespace Offsets
 
 	namespace ModuleScript
 	{
-		inline constexpr std::uintptr_t ByteCode = 0x138;
 		inline constexpr std::uintptr_t GUID = 0xD0;
 		inline constexpr std::uintptr_t Hash = 0x148;
 		inline constexpr std::uintptr_t IsCoreScript = 0xB0;
-		inline constexpr std::uintptr_t Source = 0x130;
 	}
 
 	namespace Motor6D
@@ -877,27 +972,35 @@ namespace Offsets
 		inline constexpr std::uintptr_t EmissionDirection = 0x224;
 		inline constexpr std::uintptr_t Enabled = 0x268;
 		inline constexpr std::uintptr_t FlipbookBlendFrames = 0x269;
+		inline constexpr std::uintptr_t FlipbookFramerate = 0x1EC;
 		inline constexpr std::uintptr_t FlipbookLayout = 0x228;
 		inline constexpr std::uintptr_t FlipbookMode = 0x22C;
 		inline constexpr std::uintptr_t FlipbookSizeX = 0x230;
 		inline constexpr std::uintptr_t FlipbookSizeY = 0x234;
 		inline constexpr std::uintptr_t FlipbookStartRandom = 0x26A;
+		inline constexpr std::uintptr_t Lifetime = 0x1F4;
 		inline constexpr std::uintptr_t LightEmission = 0x238;
 		inline constexpr std::uintptr_t LightInfluence = 0x23C;
 		inline constexpr std::uintptr_t LocalTransparencyModifier = 0x240;
+		inline constexpr std::uintptr_t LockedToPart = 0x26B;
 		inline constexpr std::uintptr_t Orientation = 0x244;
 		inline constexpr std::uintptr_t Rate = 0x248;
+		inline constexpr std::uintptr_t RotSpeed = 0x1FC;
+		inline constexpr std::uintptr_t Rotation = 0x204;
 		inline constexpr std::uintptr_t Shape = 0x24C;
 		inline constexpr std::uintptr_t ShapeInOut = 0x250;
 		inline constexpr std::uintptr_t ShapePartial = 0x254;
 		inline constexpr std::uintptr_t ShapeStyle = 0x258;
 		inline constexpr std::uintptr_t Size = 0xB8;
+		inline constexpr std::uintptr_t Speed = 0x20C;
 		inline constexpr std::uintptr_t SpreadAngle = 0x214;
 		inline constexpr std::uintptr_t Squash = 0xF8;
+		inline constexpr std::uintptr_t Texture = 0x1B0;
 		inline constexpr std::uintptr_t TextureContent = 0x1B0;
 		inline constexpr std::uintptr_t TimeScale = 0x25C;
 		inline constexpr std::uintptr_t Transparency = 0x138;
 		inline constexpr std::uintptr_t VelocityInheritance = 0x260;
+		inline constexpr std::uintptr_t VelocitySpread = 0x214;
 		inline constexpr std::uintptr_t WindAffectsDrag = 0x26C;
 		inline constexpr std::uintptr_t ZOffset = 0x264;
 	}
@@ -907,51 +1010,51 @@ namespace Offsets
 		inline constexpr std::uintptr_t AccountAge = 0x35C;
 		inline constexpr std::uintptr_t AccountAgeReplicate = 0x35C;
 		inline constexpr std::uintptr_t AgeChecked = 0x360;
-		inline constexpr std::uintptr_t AppearanceDidLoad = 0x3BC;
-		inline constexpr std::uintptr_t AutoJumpEnabled = 0x3BD;
+		inline constexpr std::uintptr_t AppearanceDidLoad = 0x3C0;
+		inline constexpr std::uintptr_t AutoJumpEnabled = 0x3C1;
 		inline constexpr std::uintptr_t CameraFieldOfView = 0x364;
-		inline constexpr std::uintptr_t CameraFrustumRequested = 0x3BE;
+		inline constexpr std::uintptr_t CameraFrustumRequested = 0x3C2;
 		inline constexpr std::uintptr_t CameraMaxZoomDistance = 0x368;
 		inline constexpr std::uintptr_t CameraMinZoomDistance = 0x36C;
 		inline constexpr std::uintptr_t CameraMode = 0x370;
 		inline constexpr std::uintptr_t CameraViewportSize = 0x354;
-		inline constexpr std::uintptr_t CanLoadCharacterAppearance = 0x3BF;
+		inline constexpr std::uintptr_t CanLoadCharacterAppearance = 0x3C3;
 		inline constexpr std::uintptr_t Character = 0x2A0;
 		inline constexpr std::uintptr_t CharacterAppearance = 0xD8;
 		inline constexpr std::uintptr_t CharacterAppearanceId = 0x300;
 		inline constexpr std::uintptr_t ChararacterRegionId = 0x348;
 		inline constexpr std::uintptr_t ChatAvailabilityStatus = 0xF8;
-		inline constexpr std::uintptr_t ChatMode = 0xB0;
 		inline constexpr std::uintptr_t ChatPrivacyMode = 0x374;
 		inline constexpr std::uintptr_t CloudEditCameraCoordinateFrame = 0x318;
-		inline constexpr std::uintptr_t CloudEditPlayerActive = 0x3C0;
+		inline constexpr std::uintptr_t CloudEditPlayerActive = 0x3C4;
 		inline constexpr std::uintptr_t CountryRegionCodeReplicate = 0x118;
-		inline constexpr std::uintptr_t DataComplexity = 0xA30;
+		inline constexpr std::uintptr_t DataComplexity = 0xA38;
 		inline constexpr std::uintptr_t DataComplexityLimit = 0x378;
-		inline constexpr std::uintptr_t DataReady = 0x3C1;
+		inline constexpr std::uintptr_t DataReady = 0x3C5;
 		inline constexpr std::uintptr_t DevCameraOcclusionMode = 0x37C;
 		inline constexpr std::uintptr_t DevComputerCameraMode = 0x380;
 		inline constexpr std::uintptr_t DevComputerMovementMode = 0x384;
-		inline constexpr std::uintptr_t DevEnableMouseLock = 0x3C2;
+		inline constexpr std::uintptr_t DevEnableMouseLock = 0x3C6;
 		inline constexpr std::uintptr_t DevTouchCameraMode = 0x388;
 		inline constexpr std::uintptr_t DevTouchMovementMode = 0x38C;
 		inline constexpr std::uintptr_t DisplayName = 0x138;
 		inline constexpr std::uintptr_t FollowUserId = 0x308;
 		inline constexpr std::uintptr_t FollowUserIdReplicated = 0x308;
-		inline constexpr std::uintptr_t GameplayPaused = 0x3C3;
+		inline constexpr std::uintptr_t FrustumStreaming = 0x390;
+		inline constexpr std::uintptr_t GameplayPaused = 0x3C7;
 		inline constexpr std::uintptr_t Guest = 0x310;
-		inline constexpr std::uintptr_t HasRobloxSubscription = 0x3C4;
-		inline constexpr std::uintptr_t HasVerifiedBadge = 0x3C5;
-		inline constexpr std::uintptr_t HealthDisplayDistance = 0x390;
-		inline constexpr std::uintptr_t InputLatency = 0x394;
-		inline constexpr std::uintptr_t InternalCharacterAppearanceLoaded = 0x3C6;
-		inline constexpr std::uintptr_t LocaleId = 0x738;
-		inline constexpr std::uintptr_t MaximumSimulationRadius = 0x398;
-		inline constexpr std::uintptr_t MembershipType = 0x39C;
-		inline constexpr std::uintptr_t MembershipTypeReplicate = 0x39C;
-		inline constexpr std::uintptr_t NameDisplayDistance = 0x3A0;
-		inline constexpr std::uintptr_t NeedRegionalFallback = 0x3C7;
-		inline constexpr std::uintptr_t Neutral = 0x3C8;
+		inline constexpr std::uintptr_t HasRobloxSubscription = 0x3C8;
+		inline constexpr std::uintptr_t HasVerifiedBadge = 0x3C9;
+		inline constexpr std::uintptr_t HealthDisplayDistance = 0x394;
+		inline constexpr std::uintptr_t InputLatency = 0x398;
+		inline constexpr std::uintptr_t InternalCharacterAppearanceLoaded = 0x3CA;
+		inline constexpr std::uintptr_t LocaleId = 0x740;
+		inline constexpr std::uintptr_t MaximumSimulationRadius = 0x39C;
+		inline constexpr std::uintptr_t MembershipType = 0x3A0;
+		inline constexpr std::uintptr_t MembershipTypeReplicate = 0x3A0;
+		inline constexpr std::uintptr_t NameDisplayDistance = 0x3A4;
+		inline constexpr std::uintptr_t NeedRegionalFallback = 0x3CB;
+		inline constexpr std::uintptr_t Neutral = 0x3CC;
 		inline constexpr std::uintptr_t OsPlatform = 0x158;
 		inline constexpr std::uintptr_t PartyId = 0x178;
 		inline constexpr std::uintptr_t PendingRequestedTool = 0x2B0;
@@ -959,20 +1062,24 @@ namespace Offsets
 		inline constexpr std::uintptr_t RawJoinData = 0x1B8;
 		inline constexpr std::uintptr_t ReplicationFocus = 0x2C0;
 		inline constexpr std::uintptr_t RespawnLocation = 0x2D0;
-		inline constexpr std::uintptr_t SimulationRadius = 0x3A4;
-		inline constexpr std::uintptr_t StepIdOffset = 0x3A8;
-		inline constexpr std::uintptr_t Team = 0x3AC;
-		inline constexpr std::uintptr_t TeamColor = 0x3AC;
-		inline constexpr std::uintptr_t Teleported = 0x3C9;
-		inline constexpr std::uintptr_t TeleportedIn = 0x3CA;
-		inline constexpr std::uintptr_t ThirdPartyTextChatRestrictionStatus = 0x3B0;
-		inline constexpr std::uintptr_t UnfilteredChat = 0x3CB;
+		inline constexpr std::uintptr_t SimulationRadius = 0x3A8;
+		inline constexpr std::uintptr_t StepIdOffset = 0x3AC;
+		inline constexpr std::uintptr_t Team = 0x3B0;
+		inline constexpr std::uintptr_t TeamColor = 0x3B0;
+		inline constexpr std::uintptr_t Teleported = 0x3CD;
+		inline constexpr std::uintptr_t TeleportedIn = 0x3CE;
+		inline constexpr std::uintptr_t ThirdPartyTextChatRestrictionStatus = 0x3B4;
 		inline constexpr std::uintptr_t User = 0xB8;
 		inline constexpr std::uintptr_t UserId = 0xB8;
-		inline constexpr std::uintptr_t UserIdModeReplicate = 0x3B4;
+		inline constexpr std::uintptr_t UserIdModeReplicate = 0x3B8;
 		inline constexpr std::uintptr_t VRDevice = 0x1D8;
-		inline constexpr std::uintptr_t VREnabled = 0x3CC;
-		inline constexpr std::uintptr_t VoiceChatVolume = 0x3B8;
+		inline constexpr std::uintptr_t VREnabled = 0x3D0;
+		inline constexpr std::uintptr_t VoiceChatVolume = 0x3BC;
+	}
+
+	namespace PointLight
+	{
+		inline constexpr std::uintptr_t Range = 0xD8;
 	}
 
 	namespace Primitive
@@ -996,12 +1103,17 @@ namespace Offsets
 		inline constexpr std::uintptr_t CanTouch = 0x10;
 	}
 
+	namespace ProceduralModel
+	{
+		inline constexpr std::uintptr_t Size = 0x378;
+	}
+
 	namespace RenderView
 	{
 		inline constexpr std::uintptr_t DeviceD3D11 = 0x8;
 		inline constexpr std::uintptr_t LightingValid = 0x150;
 		inline constexpr std::uintptr_t SkyValid = 0x28D;
-		inline constexpr std::uintptr_t VisualEngine = 0x18;
+		inline constexpr std::uintptr_t VisualEngine = 0x10;
 	}
 
 	namespace RunService
@@ -1017,6 +1129,17 @@ namespace Offsets
 	namespace ScriptContext
 	{
 		inline constexpr std::uintptr_t ScriptsDisabled = 0xC8;
+	}
+
+	namespace SkateboardController
+	{
+		inline constexpr std::uintptr_t Steer = 0x118;
+		inline constexpr std::uintptr_t Throttle = 0x11C;
+	}
+
+	namespace Skin
+	{
+		inline constexpr std::uintptr_t SkinColor = 0xC0;
 	}
 
 	namespace Sky
@@ -1044,9 +1167,11 @@ namespace Offsets
 		inline constexpr std::uintptr_t SunTextureId = 0x218;
 	}
 
-	namespace SpecialMesh
+	namespace SpotLight
 	{
-		inline constexpr std::uintptr_t MeshType = 0x148;
+		inline constexpr std::uintptr_t Angle = 0xD8;
+		inline constexpr std::uintptr_t Face = 0xDC;
+		inline constexpr std::uintptr_t Range = 0xE0;
 	}
 
 	namespace StarterPlayer
@@ -1078,7 +1203,6 @@ namespace Offsets
 		inline constexpr std::uintptr_t HealthDisplayDistance = 0x108;
 		inline constexpr std::uintptr_t LoadCharacterAppearance = 0x123;
 		inline constexpr std::uintptr_t LoadCharacterLayeredClothing = 0x10C;
-		inline constexpr std::uintptr_t LuaCharacterController = 0x110;
 		inline constexpr std::uintptr_t NameDisplayDistance = 0x114;
 		inline constexpr std::uintptr_t PlayerModuleStatus = 0x118;
 		inline constexpr std::uintptr_t UserEmotesEnabled = 0x124;
@@ -1094,14 +1218,27 @@ namespace Offsets
 	{
 		inline constexpr std::uintptr_t AlphaMode = 0x290;
 		inline constexpr std::uintptr_t Color = 0x278;
-		inline constexpr std::uintptr_t ColorMap = 0xB8;
 		inline constexpr std::uintptr_t EmissiveStrength = 0x294;
 		inline constexpr std::uintptr_t EmissiveTint = 0x284;
-		inline constexpr std::uintptr_t MetalnessMap = 0x118;
-		inline constexpr std::uintptr_t NormalMap = 0x148;
 		inline constexpr std::uintptr_t ResampleMode = 0x298;
-		inline constexpr std::uintptr_t RoughnessMap = 0x178;
+		inline constexpr std::uintptr_t TexturePack = 0x1A8;
 		inline constexpr std::uintptr_t TexturePackContent = 0x1A8;
+	}
+
+	namespace SurfaceLight
+	{
+		inline constexpr std::uintptr_t Angle = 0xD8;
+		inline constexpr std::uintptr_t Face = 0xDC;
+		inline constexpr std::uintptr_t Range = 0xE0;
+	}
+
+	namespace SwimController
+	{
+		inline constexpr std::uintptr_t AccelerationTime = 0xE0;
+		inline constexpr std::uintptr_t PitchMaxTorque = 0xE4;
+		inline constexpr std::uintptr_t PitchSpeedFactor = 0xE8;
+		inline constexpr std::uintptr_t RollMaxTorque = 0xEC;
+		inline constexpr std::uintptr_t RollSpeedFactor = 0xF0;
 	}
 
 	namespace TaskScheduler
@@ -1115,37 +1252,43 @@ namespace Offsets
 	namespace Team
 	{
 		inline constexpr std::uintptr_t AutoAssignable = 0xBC;
+		inline constexpr std::uintptr_t AutoColorCharacters = 0xBD;
 		inline constexpr std::uintptr_t ChildOrder = 0xB0;
 		inline constexpr std::uintptr_t Score = 0xB4;
+		inline constexpr std::uintptr_t TeamColor = 0xB8;
 	}
 
 	namespace Terrain
 	{
-		inline constexpr std::uintptr_t AcquisitionMethod = 0x184;
-		inline constexpr std::uintptr_t Decoration = 0x1A0;
-		inline constexpr std::uintptr_t GrassLength = 0x188;
-		inline constexpr std::uintptr_t LastUsedModificationMethod = 0x18C;
-		inline constexpr std::uintptr_t SmoothVoxelsUpgraded = 0x1A1;
-		inline constexpr std::uintptr_t WaterColor = 0x178;
-		inline constexpr std::uintptr_t WaterReflectance = 0x190;
-		inline constexpr std::uintptr_t WaterTransparency = 0x194;
-		inline constexpr std::uintptr_t WaterWaveSize = 0x198;
-		inline constexpr std::uintptr_t WaterWaveSpeed = 0x19C;
+		inline constexpr std::uintptr_t AcquisitionMethod = 0x1E4;
+		inline constexpr std::uintptr_t Decoration = 0x200;
+		inline constexpr std::uintptr_t GrassLength = 0x1E8;
+		inline constexpr std::uintptr_t LastUsedModificationMethod = 0x1EC;
+		inline constexpr std::uintptr_t SmoothVoxelsUpgraded = 0x201;
+		inline constexpr std::uintptr_t WaterColor = 0x1D8;
+		inline constexpr std::uintptr_t WaterReflectance = 0x1F0;
+		inline constexpr std::uintptr_t WaterTransparency = 0x1F4;
+		inline constexpr std::uintptr_t WaterWaveSize = 0x1F8;
+		inline constexpr std::uintptr_t WaterWaveSpeed = 0x1FC;
 	}
 
 	namespace TerrainDetail
 	{
+		inline constexpr std::uintptr_t EmissiveStrength = 0x1E4;
 		inline constexpr std::uintptr_t Face = 0x1E8;
 		inline constexpr std::uintptr_t MaterialPattern = 0x1EC;
+		inline constexpr std::uintptr_t StudsPerTile = 0x1F0;
+		inline constexpr std::uintptr_t TexturePack = 0x1A8;
 		inline constexpr std::uintptr_t TexturePackContent = 0x1A8;
 	}
 
-	namespace Texture
+	namespace TerrainRegion
 	{
-		inline constexpr std::uintptr_t OffsetStudsU = 0x270;
-		inline constexpr std::uintptr_t OffsetStudsV = 0x274;
-		inline constexpr std::uintptr_t StudsPerTileU = 0x278;
-		inline constexpr std::uintptr_t StudsPerTileV = 0x27C;
+		inline constexpr std::uintptr_t ExtentsMax = 0xB8;
+		inline constexpr std::uintptr_t ExtentsMin = 0xBE;
+		inline constexpr std::uintptr_t IsSmooth = 0xC8;
+		inline constexpr std::uintptr_t SizeInCells = 0xB8;
+		inline constexpr std::uintptr_t SmoothGrid = 0xC8;
 	}
 
 	namespace Tool
@@ -1159,6 +1302,14 @@ namespace Offsets
 		inline constexpr std::uintptr_t ManualActivationOnly = 0x4BA;
 		inline constexpr std::uintptr_t RequiresHandle = 0x4BB;
 		inline constexpr std::uintptr_t ToolTip = 0x468;
+	}
+
+	namespace TrackerLodController
+	{
+		inline constexpr std::uintptr_t AudioMode = 0xB8;
+		inline constexpr std::uintptr_t VideoExtrapolationMode = 0xBC;
+		inline constexpr std::uintptr_t VideoLodMode = 0xC0;
+		inline constexpr std::uintptr_t VideoMode = 0xC4;
 	}
 
 	namespace Trail
@@ -1190,7 +1341,6 @@ namespace Offsets
 		inline constexpr std::uintptr_t KeyboardEnabled = 0xEF;
 		inline constexpr std::uintptr_t LegacyInputEventsEnabled = 0xF0;
 		inline constexpr std::uintptr_t MouseBehavior = 0x1B8;
-		inline constexpr std::uintptr_t MouseDeltaSensitivity = 0x1B8;
 		inline constexpr std::uintptr_t MouseIconEnabled = 0x1B8;
 		inline constexpr std::uintptr_t MouseIconStack = 0x178;
 		inline constexpr std::uintptr_t NavBarSize = 0xD0;
@@ -1207,13 +1357,23 @@ namespace Offsets
 		inline constexpr std::uintptr_t VREnabled = 0x1B8;
 	}
 
+
 	namespace ViewportFrame
 	{
 		inline constexpr std::uintptr_t Ambient = 0x9C0;
 		inline constexpr std::uintptr_t CameraCFrame = 0x990;
 		inline constexpr std::uintptr_t CameraFieldOfView = 0x9F0;
 		inline constexpr std::uintptr_t CurrentCamera = 0x988;
+		inline constexpr std::uintptr_t ImageColor3 = 0x9CC;
+		inline constexpr std::uintptr_t ImageTransparency = 0x9F4;
 		inline constexpr std::uintptr_t IsMirrored = 0x9F8;
+		inline constexpr std::uintptr_t LightColor = 0x9D8;
+		inline constexpr std::uintptr_t LightDirection = 0x9E4;
+	}
+
+	namespace VoiceChatInternal
+	{
+		inline constexpr std::uintptr_t VoiceChatState = 0xE8;
 	}
 
 	namespace Weld
@@ -1226,6 +1386,7 @@ namespace Offsets
 		inline constexpr std::uintptr_t SourceInstance = 0xF8;
 		inline constexpr std::uintptr_t SourceName = 0xB8;
 		inline constexpr std::uintptr_t TargetInstance = 0x108;
+		inline constexpr std::uintptr_t TargetName = 0xD8;
 	}
 
 	namespace WireframeHandleAdornment
@@ -1241,26 +1402,28 @@ namespace Offsets
 		inline constexpr std::uintptr_t AuthorityMode = 0x4C4;
 		inline constexpr std::uintptr_t AvatarUnificationMode = 0x4C8;
 		inline constexpr std::uintptr_t ClientAnimatorThrottling = 0x4CC;
-		inline constexpr std::uintptr_t ConvexDecompCompressed = 0x555;
 		inline constexpr std::uintptr_t CurrentCamera = 0x498;
 		inline constexpr std::uintptr_t DistributedGameTime = 0x4B8;
 		inline constexpr std::uintptr_t EnableSLIMAvatars = 0x4D0;
-		inline constexpr std::uintptr_t FallHeightEnabled = 0x556;
+		inline constexpr std::uintptr_t FallHeightEnabled = 0x555;
 		inline constexpr std::uintptr_t FluidForces = 0x4D4;
 		inline constexpr std::uintptr_t IKControlConstraintSupport = 0x4D8;
 		inline constexpr std::uintptr_t ImprovedAnimationConstraint = 0x4DC;
 		inline constexpr std::uintptr_t ImprovedPhysicsReplication = 0x4E0;
+		inline constexpr std::uintptr_t InsertPoint = 0x3B0;
 		inline constexpr std::uintptr_t InterpolationThrottling = 0x4E4;
 		inline constexpr std::uintptr_t LayeredClothingCacheOptimizations = 0x4E8;
 		inline constexpr std::uintptr_t LuauTypeCheckMode = 0x4EC;
 		inline constexpr std::uintptr_t MeshPartHeadsAndAccessories = 0x4F0;
 		inline constexpr std::uintptr_t MeshStreamingAndImprovedLods = 0x4F4;
 		inline constexpr std::uintptr_t ModelStreamingBehavior = 0x4F8;
-		inline constexpr std::uintptr_t NextGenerationReplication = 0x4FC;
-		inline constexpr std::uintptr_t NextGenerationReplicationAlias = 0x4FC;
+		inline constexpr std::uintptr_t NextGenerationReplication = 0x4C4;
+		inline constexpr std::uintptr_t NextGenerationReplicationAlias = 0x4C4;
 		inline constexpr std::uintptr_t PathfindingUseImprovedSearch = 0x500;
 		inline constexpr std::uintptr_t PhysicsSteppingMethod = 0x504;
 		inline constexpr std::uintptr_t PlayerCharacterDestroyBehavior = 0x508;
+		inline constexpr std::uintptr_t PlayerScriptsUseInputActionSystem = 0x4C4;
+		inline constexpr std::uintptr_t PlayerScriptsUseInputActionSystemAlias = 0x4C4;
 		inline constexpr std::uintptr_t PredictiveStreamingMode = 0x510;
 		inline constexpr std::uintptr_t PrimalPhysicsSolver = 0x514;
 		inline constexpr std::uintptr_t RejectCharacterDeletions = 0x518;
@@ -1268,13 +1431,20 @@ namespace Offsets
 		inline constexpr std::uintptr_t ReplicateInstanceDestroySetting = 0x520;
 		inline constexpr std::uintptr_t Retargeting = 0x524;
 		inline constexpr std::uintptr_t SandboxedInstanceMode = 0x528;
+		inline constexpr std::uintptr_t SignalBehavior = 0x4C4;
+		inline constexpr std::uintptr_t SignalBehavior2 = 0x4C4;
+		inline constexpr std::uintptr_t SignalBehaviorAlias = 0x4C4;
 		inline constexpr std::uintptr_t StreamOutBehavior = 0x530;
+		inline constexpr std::uintptr_t StreamingEnabled = 0x4C4;
+		inline constexpr std::uintptr_t StreamingEnabledAlias = 0x4C4;
 		inline constexpr std::uintptr_t StreamingIntegrityMode = 0x534;
 		inline constexpr std::uintptr_t StreamingMinRadius = 0x538;
 		inline constexpr std::uintptr_t StreamingTargetRadius = 0x53C;
 		inline constexpr std::uintptr_t Terrain = 0x4A8;
 		inline constexpr std::uintptr_t ThrottleLevel = 0x540;
 		inline constexpr std::uintptr_t TouchEventsUseCollisionGroups = 0x544;
+		inline constexpr std::uintptr_t UseFixedSimulation = 0x4C4;
+		inline constexpr std::uintptr_t UseFixedSimulationAlias = 0x4C4;
 		inline constexpr std::uintptr_t UseNewLuauTypeSolver = 0x54C;
 		inline constexpr std::uintptr_t ValidateEnabledProximityPrompt = 0x550;
 		inline constexpr std::uintptr_t WatermarkHash = 0x468;
@@ -1297,8 +1467,13 @@ namespace Offsets
 
 	namespace WorldRoot
 	{
-		inline constexpr std::uintptr_t CollisionGroupData = 0x3F0;
 		inline constexpr std::uintptr_t PhysicsStepTime = 0x3F0;
+	}
+
+	namespace WrapTextureTransfer
+	{
+		inline constexpr std::uintptr_t UVMaxBound = 0xE0;
+		inline constexpr std::uintptr_t UVMinBound = 0xE8;
 	}
 
 }
