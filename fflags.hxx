@@ -2,8 +2,7 @@
 
 #include <cstdint>
 
-// Generated from the live FFlag registry and registration wrappers.
-// Values are module-relative storage RVAs.
+
 namespace FFlags
 {
 	namespace Build
